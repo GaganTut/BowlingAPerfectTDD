@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 module.exports = function(scoreData) {
   function checkValid(scoreData) {
     if(!Array.isArray(scoreData) || scoreData.length !== 10) {
@@ -31,6 +33,8 @@ module.exports = function(scoreData) {
             } else {
               bonusPoints += scoreData[i + 1].b;
             }
+          } else {
+            bonusPoints += scoreData[i + 1].b;
           }
         } else {
           bonusPoints += scoreData[i].b;

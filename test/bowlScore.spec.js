@@ -42,7 +42,7 @@ let game1 = [
   {
     a: 10,
     b: 5,
-    c: 9
+    c: 4
   }
 ];
 
@@ -238,5 +238,6 @@ describe("score function", () => {
 
   it("should calculate mixed scores", () => {
     expect(score(game5)).to.equal(190);
+    expect(score(game1)).to.equal(166);
   });
 });
