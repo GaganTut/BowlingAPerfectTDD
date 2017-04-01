@@ -4,6 +4,7 @@ node_js:
   - "iojs"
   - "7"
 
-install:
-  - npm install -g mocha
-  - npm install -g chai
+before_install :
+ - "npm install -g mocha"
+install :
+ - "npm install chai"
