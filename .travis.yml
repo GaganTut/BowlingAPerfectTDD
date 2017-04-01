@@ -4,4 +4,5 @@ node_js:
   - "stable"
 
 install:
-  - npm install -g mocha chai
+  - npm install -g mocha
+  - npm install -D chai
